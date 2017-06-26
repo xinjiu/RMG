@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>RMG</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProjectServlet</servlet-name>
+    <servlet-class>TestSeverlet.HelloSeverlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ProjectServlet</servlet-name>   
+    <url-pattern>/servlet/HelloSeverlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckRegister</servlet-name>
+    <servlet-class>Register.CheckRegister</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckRegister</servlet-name>   
+    <url-pattern>/servlet/CheckRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckLogin</servlet-name>
+    <servlet-class>Register.CheckLogin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckLogin</servlet-name>   
+    <url-pattern>/servlet/CheckLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Checksousuo</servlet-name>
+    <servlet-class>Register.Checksousuo</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Checksousuo</servlet-name>   
+    <url-pattern>/servlet/Checksousuo</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file> 
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
