@@ -31,7 +31,7 @@
 	background-image: url("image/loginbackground.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	
+	background-size:cover; 
 	position: absolute;
 }
 
