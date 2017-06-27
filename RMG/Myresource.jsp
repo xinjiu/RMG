@@ -40,7 +40,7 @@
 #back {
 	width: 99%;
 	height: 99%;
-	background-image: url("image/loginbackground.png");
+	background-image: url("image/mybackgroud.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: absolute;
