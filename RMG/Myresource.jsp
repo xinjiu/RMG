@@ -66,7 +66,7 @@
 			<table id="s" border="1" bgcolor="#cccc">
 				<%
 					if (allsqls.size() == 0) {
-						out.print("你名下暂时没有任何手机资源");
+						%><font color="red"><% out.print("你名下暂时没有任何手机资源");%></font><% 
 
 					} else {
 				%>
