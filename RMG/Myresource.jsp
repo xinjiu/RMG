@@ -28,13 +28,14 @@
 #first {
 	width: 90%;
 	height: 20px;
+	margin-top:20px;
 	text-align: right;
 }
 
 #s {
 	width:95%;
 	margin-left:2.5%;
-	margin-top:20px;
+	margin-top:80px;
 	text-align: center;
 }
 #back {
@@ -60,7 +61,7 @@
 	%>
 	<div id="back">
 		<div id="first">
-			<form action="servlet/Checksousuo" method="post"><input type="submit" value="返回"></form>
+			<form action="servlet/Checksousuo" method="post"><input type="image" src="image/backbutton.png"></form>
 		</div>
 		<div id="s">
 			<table id="s" border="1" bgcolor="#cccc">

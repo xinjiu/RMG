@@ -40,6 +40,36 @@
     <servlet-name>Checksousuo</servlet-name>   
     <url-pattern>/servlet/Checksousuo</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>CheckValid</servlet-name>
+    <servlet-class>Register.CheckValid</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckValid</servlet-name>   
+    <url-pattern>/servlet/CheckValid</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CheckValid2</servlet-name>
+    <servlet-class>Register.CheckValid2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckValid2</servlet-name>   
+    <url-pattern>/servlet/CheckValid2</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>CheckValid3</servlet-name>
+    <servlet-class>Register.CheckValid3</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckValid3</servlet-name>   
+    <url-pattern>/servlet/CheckValid3</url-pattern>
+  </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

@@ -31,7 +31,7 @@
 	margin-left:40%;
 }
 #geshi {
-	height: 75%;
+	height: 65%;
 	margin-left: 0%;
 	margin-top: 20px;
 	text-align: center;

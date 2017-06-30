@@ -52,7 +52,7 @@
 			onclick="return check()">
 			<div id="zhuce">
 				<a href="register.jsp"><img src="image/registerbutton.png">
-				</src></a>
+				</a>
 			</div>
 			<div id="info">
 				<table>
@@ -90,7 +90,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td></td>
+						<td><a href="forgetpwd1.jsp">忘记密码</a></td>
 						<td><input type="image" src="image/login1.png" onclick="javascript:document.forms['Form_2'].submit()"></td>
 
 					</tr>
