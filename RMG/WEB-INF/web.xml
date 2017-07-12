@@ -61,7 +61,7 @@
     <url-pattern>/servlet/CheckValid2</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+  <servlet>
     <servlet-name>CheckValid3</servlet-name>
     <servlet-class>Register.CheckValid3</servlet-class>
   </servlet>
@@ -69,6 +69,27 @@
   <servlet-mapping>
     <servlet-name>CheckValid3</servlet-name>   
     <url-pattern>/servlet/CheckValid3</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>Edit</servlet-name>
+    <servlet-class>Register.Edit</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Edit</servlet-name>   
+    <url-pattern>/servlet/Edit</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ShowEdit</servlet-name>
+    <servlet-class>Register.ShowEdit</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ShowEdit</servlet-name>   
+    <url-pattern>/servlet/ShowEdit</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

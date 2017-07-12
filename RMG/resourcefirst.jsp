@@ -45,7 +45,7 @@ li {
 }
 
 #geshi {
-	height: 60%; width : 95%;
+	height: 60%;
 	margin-left: 2.5%;
 	margin-top: 20px;
 	text-align: center;
@@ -62,7 +62,7 @@ li {
 #back {
 	width: 99%;
 	height: 99%;
-	background-image: url("image/loginbackground.png");
+	background-image: url("image/registerbackgroud.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: absolute;
@@ -109,16 +109,23 @@ li {
 			</form>
 		</div>
 		<div id="geshi">
-			<table id="geshi" border="1" bgcolor="#cccc">
+			<table border="1" bgcolor="#cccc">
 				<tr id ="heit">
-					<th width="10%">用户名</th>
-					<th width="10%">机型</th>
-					<th width="10%">IMEI</th>
-					<th width="10%">颜色</th>
+					<th width="8%">Id</th>
+					<th width="8%">用户名</th>
+					<th width="8%">机型</th>
+					<th width="8%">IMEI</th>
+					<th width="8%">颜色</th>
 					<th width="8%">借入日期</th>
 					<th width="8%">套装结构</th>
 					<th width="8%">工号</th>
 					<th width="8%">年份</th>
+					<% if(session.getAttribute("username")==null){
+						
+						}else{
+						out.print("<th width='8%'>修改</th>");
+						}%>
+					
 				</tr>
 				<%
 					/* out.print(request.getAttribute("sql")); */
@@ -126,10 +133,15 @@ li {
 					for (List<String> i : sql) {
 					%>
 						<tr id ="heit">
+						
 					<% 	for (String j : i) {
 							out.print("<td>" + j + "</td>");
 						}
-						%></tr>
+						if(session.getAttribute("username")==null){ 
+						
+						}else{
+						out.print("<td><a href=servlet/ShowEdit?value="+i.get(0)+">编辑</td>");
+						}%></tr>
 					<% }
 				%>
 
